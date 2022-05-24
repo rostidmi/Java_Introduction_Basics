@@ -13,8 +13,9 @@ public class Main {
         task1_6();
 //      Ветвления:
         task2_1();
+        task2_2();
     }
-    
+
 
 
 //  Тема "Линейные программы"
@@ -106,4 +107,16 @@ public class Main {
         System.out.println("Не существует.");
 
 }
+//  Задание Второе:
+    private static void task2_2(){
+        System.out.println("Найти max{min(a, b), min(c, d)}.");
+        int a = 2;
+        int b = 4;
+        int c = 6;
+        int d = 8;
+
+        int res = Math.max(Math.min(a, b), Math.min(c,d));
+        System.out.println("Ответ: " + res);
+    }
+
 }
