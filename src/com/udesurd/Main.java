@@ -16,6 +16,7 @@ public class Main {
         task2_2();
         task2_3();
         task2_4();
+        task2_5();
     }
 
 
@@ -130,6 +131,7 @@ private static void task2_3() {
     else
         System.out.println("Не на одной прямой");
 }
+//  Задание Четвертое:
     private static void task2_4(){
         System.out.println("4.  Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича. Определить, пройдет ли кирпич через\n" +
                 "отверстие.");
@@ -149,4 +151,17 @@ private static void task2_3() {
 
 
     }
+//  Задание Пятое:
+    private static void task2_5(){
+        System.out.println("5. Вычислить значение функции: ");
+        double x = 2;
+        double res;
+        if (x<=3) {
+            res = Math.pow(x, 2) - 3 * x + 9;
+        } else {
+            res = 1 / (Math.pow(x, 3) + 6);
+        }
+        System.out.println("Ответ: " + res);
+    }
+
 }
