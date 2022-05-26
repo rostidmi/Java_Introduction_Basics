@@ -145,9 +145,9 @@ private static void task2_3() {
         if ((x <= a && y <= b) || (y <= a && x <= b) ||
                 (x <= a && z <= b) || (z <= a && x <= b) ||
                 (z <= a && y <= b) || (y <= a && z<= b))
-            System.out.println("Пролезет.");
+            System.out.println("Пройдет.");
         else
-            System.out.println("Не пролезет.");
+            System.out.println("Не пройдет.");
 
 
     }
@@ -162,6 +162,78 @@ private static void task2_3() {
             res = 1 / (Math.pow(x, 3) + 6);
         }
         System.out.println("Ответ: " + res);
+    }
+//  Задание Первое:
+    private static void task3_1() {
+    System.out.println("1. Напишите программу, где пользователь вводит любое целое положительное число. А программа суммирует\n" +
+            "все числа от 1 до введенного пользователем числа.");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        int sum = 0;
+        int i = 1;
+
+        while (i <= number) {
+            sum += i;
+            i++;
+        }
+        System.out.println("Сумма от 1 до " + number + " равна " + sum);
+        System.out.println();
+    }
+//
+    private static void task3_2(){
+        System.out.println("2. Вычислить значения функции на отрезке [а,b] c шагом h: ");
+        int a = 2;
+        int b = 5;
+        int h = 4;
+        int y;
+
+        for (int i = a; i <= b; i += h) {
+            if (i > 2) {
+               y = i;
+            } else {
+                y = i * (-1);
+            }
+            System.out.println("При х = " + i + " у = " + y);
+        }
+    }
+//
+    private static void task3_3(){
+        System.out.println("3. Составить программу нахождения произведения квадратов первых двухсот чисел: ");
+        int sum = 0;
+        for (int i = 1; i <= 100; i++) {
+            sum += i * i;
+        }
+        System.out.println("Сумма квадратов чисел от 1 до 100: " + sum);
+    }
+//
+    private static void task3_4() {
+        System.out.println("4. Составить программу нахождения произведения квадратов первых двухсот чисел: ");
+        
+    }
+//  Задание Седьмое:
+    private static void task3_5() {
+        System.out.println("5. Даны числовой ряд и некоторое число е. Найти сумму тех членов ряда, модуль которых больше или равен\n" +
+                "заданному е. Общий член ряда имеет вид:");
+        int n = 10;
+        double sum = 0.0;
+        double e = 0.1;
+        double a = 0.0;
+
+        for (int i = 0; i <= n; i++) {
+            a = 1 / Math.pow(2, i) + 1 / Math.pow(3, i);
+            if (Math.abs(a) >= e) {
+                sum += a;
+            }
+            System.out.println("Сумма равна: " + sum);
+        }
+    }
+//
+    private static void task3_6(){
+        System.out.println("6 . Вывести на экран соответствий между символами и их численными обозначениями в памяти компьютера.");
+//      Таблица ASCII
+        for (int i = 32; i <= 126; i++) {
+            System.out.println(i + " " + (char) i);
+        }
     }
 
 }
