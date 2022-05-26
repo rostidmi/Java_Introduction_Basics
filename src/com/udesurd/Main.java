@@ -17,6 +17,13 @@ public class Main {
         task2_3();
         task2_4();
         task2_5();
+//      Циклы:
+        task3_1();
+        task3_2();
+        task3_3();
+        task3_4();
+        task3_5();
+        task3_6();
     }
 
 
@@ -208,7 +215,7 @@ private static void task2_3() {
 //
     private static void task3_4() {
         System.out.println("4. Составить программу нахождения произведения квадратов первых двухсот чисел: ");
-        
+
     }
 //  Задание Седьмое:
     private static void task3_5() {
