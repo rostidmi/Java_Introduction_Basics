@@ -15,6 +15,7 @@ public class Main {
         task2_1();
         task2_2();
         task2_3();
+        task2_4();
     }
 
 
@@ -129,4 +130,23 @@ private static void task2_3() {
     else
         System.out.println("Не на одной прямой");
 }
+    private static void task2_4(){
+        System.out.println("4.  Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича. Определить, пройдет ли кирпич через\n" +
+                "отверстие.");
+        int a = 5;
+        int b = 5;
+
+        int x= 6;
+        int y = 6;
+        int z = 5;
+
+        if ((x <= a && y <= b) || (y <= a && x <= b) ||
+                (x <= a && z <= b) || (z <= a && x <= b) ||
+                (z <= a && y <= b) || (y <= a && z<= b))
+            System.out.println("Пролезет.");
+        else
+            System.out.println("Не пролезет.");
+
+
+    }
 }
