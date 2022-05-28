@@ -97,12 +97,12 @@ public class Main {
     private static void task1_6(){
         System.out.println("Для данной области составить линейную программу, которая печатает true, если точка с координатами (х, у)\n" +
                 "принадлежит закрашенной области, и false — в противном случае:");
-        int x = 2;
+        int x = 4;
         int y = 3;
-        if ((y>0) && (y<=4) && (x>=-2) && (x<=2) || (y<=0) && (y>=3) && (x>=-4) && (x<=5))
-            System.out.println("Принадлежит.");
+        if ((y>0) && (y<=4) && (x>=-4) && (x<=4) || (y<=0) && (y>=-3) && (x>=-4) && (x<=4))
+            System.out.println("true");
         else
-            System.out.println("Не принадлежит.");
+            System.out.println("false");
     }
 
 //  Тема "Ветвления"
