@@ -252,4 +252,14 @@ private static void task2_3() {
         }
     }
 
-}
+    private static void task3_7(){
+        System.out.println("Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.\n" +
+                "m и n вводятся с клавиатуры.\n");
+        int n = 28;
+
+
+        for (int m = 2 ; m<=n; m++)
+            if (n%m==0)
+                System.out.println("Делитель: " + m);
+
+}}
