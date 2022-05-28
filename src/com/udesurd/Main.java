@@ -1,5 +1,6 @@
 package com.udesurd;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Main {
@@ -195,7 +196,7 @@ private static void task2_3() {
         System.out.println("Сумма от 1 до " + number + " равна " + sum);
         System.out.println();
     }
-//
+//  Задание Второе
     private static void task3_2(){
         System.out.println("2. Вычислить значения функции на отрезке [а,b] c шагом h: ");
         int a = 2;
@@ -212,7 +213,7 @@ private static void task2_3() {
             System.out.println("При х = " + i + " у = " + y);
         }
     }
-//
+//  Задание Третье
     private static void task3_3(){
         System.out.println("3. Составить программу нахождения произведения квадратов первых двухсот чисел: ");
         int sum = 0;
@@ -221,12 +222,17 @@ private static void task2_3() {
         }
         System.out.println("Сумма квадратов чисел от 1 до 100: " + sum);
     }
-//
+//  Задание Четвертое
     private static void task3_4() {
         System.out.println("4. Составить программу нахождения произведения квадратов первых двухсот чисел: ");
+        BigInteger s = BigInteger.valueOf(1);
+        for(int i = 2; i <= 200; i++) {
+            s = s.multiply(BigInteger.valueOf((long) i * i));
+        }
+        System.out.println(s);
 
     }
-//  Задание Седьмое:
+//  Задание Пятое:
     private static void task3_5() {
         System.out.println("5. Даны числовой ряд и некоторое число е. Найти сумму тех членов ряда, модуль которых больше или равен\n" +
                 "заданному е. Общий член ряда имеет вид:");
@@ -243,17 +249,17 @@ private static void task2_3() {
             System.out.println("Сумма равна: " + sum);
         }
     }
-//
+//  Задание Шестое
     private static void task3_6(){
-        System.out.println("6 . Вывести на экран соответствий между символами и их численными обозначениями в памяти компьютера.");
+        System.out.println("6. Вывести на экран соответствий между символами и их численными обозначениями в памяти компьютера.");
 //      Таблица ASCII
         for (int i = 32; i <= 126; i++) {
             System.out.println(i + " " + (char) i);
         }
     }
-
+//  Задание Седьмое:
     private static void task3_7(){
-        System.out.println("Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.\n" +
+        System.out.println("7. Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.\n" +
                 "m и n вводятся с клавиатуры.\n");
         int n = 28;
 
